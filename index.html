@@ -1,0 +1,1210 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Website</title>
+        <style>
+            .navigation {
+                display: flex;
+            }
+
+            .img {
+                cursor: pointer;
+                width: 223px;
+                margin-left: 32px;
+                margin-top: -38px;
+            }
+
+            .search {
+                height: 44px;
+                width: 230px;
+                margin-left: 607px;
+                margin-top: 57px;
+                font-size: 18px;
+            }
+
+            .search-btn {
+                margin: 12px;
+                background-color: #327BC7;
+                font-size: 20px;
+                padding: 10px;
+                border-radius: 4px;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                width: 154px;
+                height: 46px;
+
+            }
+
+            .search-btn:hover {
+                background-color: #fff;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+                color: #000;
+            }
+
+            .navi-div a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                transition: color 0.3s;
+
+            }
+
+            .navi-div a:hover {
+                color: #000;
+
+            }
+
+            .navi-div {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #327BC7;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-around;
+
+            }
+
+            .container-facebook {
+                border: 0px solid #000;
+                width: 370px;
+                display: inline-block;
+                height: 408px;
+                font-family: sans-serif;
+                box-shadow: rgba(44, 44, 47, 0.2) 0px 7px 29px 0px;
+                margin: 90px 35px;
+            }
+
+            .container-amazon {
+                border: 0px solid #000;
+                width: 370px;
+                display: inline-block;
+                height: 408px;
+                font-family: sans-serif;
+                box-shadow: rgba(44, 44, 47, 0.2) 0px 7px 29px 0px;
+                margin: 90px 35px;
+            }
+
+            .container {
+                border: 0px solid #000;
+                width: 370px;
+                display: inline-block;
+                height: 404px;
+                font-family: sans-serif;
+                box-shadow: rgba(44, 44, 47, 0.2) 0px 7px 29px 0px;
+                margin: 90px 35px;
+            }
+
+            .container3 {
+                border: 0px solid #000;
+                width: 370px;
+                display: inline-block;
+                height: 404px;
+                font-family: sans-serif;
+                box-shadow: rgba(44, 44, 47, 0.2) 0px 7px 29px 0px;
+                margin: 90px 35px;
+            }
+
+            p {
+                text-align: center;
+                margin-left: 23px;
+                margin-right: 23px;
+                justify-content: center;
+            }
+
+            .meta-img {
+                padding-top: 23px;
+                width: 61px;
+                margin-left: 41%;
+            }
+
+            .btn-read {
+                background-color: #327BC7;
+                border: none;
+                color: #fff;
+                margin-left: 63px;
+                width: 237px;
+                border-radius: 5px;
+                height: 40px;
+                cursor: pointer;
+            }
+
+            .btn-read:hover {
+                box-shadow: rgba(44, 44, 47, 0.2) 0px 7px 29px 0px;
+                background-color: #ffff;
+                color: #000;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: sans-serif;
+                margin-top: 4%;
+            }
+
+            .amazon-pic {
+                width: 235px;
+                margin-left: 107px;
+                padding-top: 23px;
+
+            }
+
+            .insta-pic {
+                padding-top: 23px;
+                width: 54px;
+                margin-left: 149px;
+            }
+
+            .wtahs-pic {
+                width: 79px;
+
+                margin-left: 140px;
+            }
+
+            .hand-img {
+                width: 132px;
+                margin-left: 114px;
+            }
+
+            .boot-img {
+                width: 128px;
+                margin-left: 114px;
+            }
+
+            .redmi-img {
+                width: 91px;
+                margin-left: 132px;
+            }
+
+            .oppo-img {
+                width: 87px;
+                margin-left: 130px;
+            }
+
+            .vivo-img {
+                width: 141px;
+                margin-left: 111px;
+            }
+
+            .dell-img {
+                width: 65px;
+                margin-left: 150px;
+            }
+
+            .microsoft {
+                width: 253px;
+                margin-left: 69px;
+            }
+
+            .messenger {
+                width: 50px;
+                margin-left: 155px;
+            }
+
+            h3 {
+                text-align: center;
+                padding-top: 30px;
+            }
+
+            .meta-pic {
+                width: 80px;
+                margin-left: 42%;
+            }
+
+            p {
+                font-size: 17px;
+                margin-left: 34px;
+                margin-right: 34px;
+                margin-top: 20px;
+            }
+
+            .btn {
+                margin-left: 25%;
+                height: 60px;
+                width: 250px;
+                padding: 15px;
+                border-radius: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                cursor: pointer;
+                color: #fff;
+                background-color: #327BC7;
+                border: none;
+                transition: background-color 0.3s;
+
+            }
+
+            .btn:hover {
+
+                background-color: #fff;
+                color: #000;
+
+            }
+
+            .amazon-pic {
+                width: 203px;
+                margin-left: 24%;
+            }
+
+            .facebook-pic {
+                width: 100px;
+                margin-left: 41%;
+            }
+
+            .google-img {
+                width: 60px;
+                margin-left: 155px;
+            }
+
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px 0;
+                margin-top: 67px;
+            }
+
+            .footer-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .footer-column {
+                flex: 0 0 30%;
+                margin-bottom: 20px;
+                text-align: left;
+                padding: 0 20px;
+            }
+
+            .footer-column h3 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            .footer-column ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .footer-column li {
+                margin-bottom: 10px;
+            }
+
+            .footer-column a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .copyright {
+                margin-top: 20px;
+            }
+
+            .foot-img {
+                margin-left: 44%;
+                margin-top: 10%;
+            }
+
+            .telegram-btn {
+                margin-left: 40.2%;
+                margin-top: 45px;
+                padding: 7px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                height: 60px;
+                cursor: pointer;
+                background-color: #327BC7;
+                font-size: 23px;
+                border: none;
+                color: #fff;
+                transition: background-color 0.3s;
+                border-radius: 30px;
+                width: 300px;
+            }
+
+            .telegram-btn:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+
+            label {
+                font-family: sans-serif;
+                font-size: 20px;
+                margin-top: 12px;
+                margin-left: 4%;
+            }
+
+            input {
+                width: 400px;
+                margin-left: 170px;
+
+                margin-top: 56px;
+                font-size: 20px;
+                height: 40px;
+            }
+
+            hr {
+                margin-left: 8%;
+                margin-right: 8%;
+                margin-top: 56px;
+            }
+
+            .form-div {
+                margin-left: 10px;
+            }
+
+            h5 {
+                font-size: 45px;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            .last-btn {
+                color: #fff;
+                background-color: #327BC7;
+                border: none;
+                border-radius: 7px;
+                cursor: pointer;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                transition: background-color 0.3s;
+                height: 50px;
+            }
+
+            .last-btn:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+            select {
+                margin-left: 13%;
+                width: 400px;
+                height: 40px;
+            }
+
+            h1 {
+                margin-top: 112px;
+                cursor: pointer;
+                font-size: 50px;
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            .navi-div {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #007bff;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                margin: 0;
+            }
+
+            .navi-div a {
+
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 10px;
+                padding: 12px;
+                transition: color 0.3s;
+            }
+
+            .navi-div a:hover {
+
+                background-color: rgba(255, 255, 255, 0.2);
+                ;
+                color: #02c06d;
+            }
+
+            .home {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .home-p {
+                margin-left: 30px;
+                margin-left: 30px;
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+
+            .about {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .serives {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .preferences {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .More-Blog {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .news {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .Company-Product {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .lpa {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .company-products {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            .address {
+                border: 0px solid #000;
+                width: 1200px;
+                height: 400px;
+                margin-left: 79px;
+                display: none;
+                margin-top: -58px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <img class="img" src="Teach.png" alt="Opps">
+            <div class="input-div">
+                <input class="search" id="search" type="text" placeholder="Search">
+                <input class="search-btn" id="search-btn" onclick="tpe()" type="button" value="Search">
+            </div>
+        </div>
+        <div class="navi-div">
+            <a href="#" onclick="s1()">Home</a>
+            <a href="#" onclick="s2()">About us</a>
+            <a href="#" onclick="s3()">Services</a>
+            <a href="#" onclick="s4()">Preferences</a>
+            <a href="#" onclick="s5()">More Blog</a>
+            <a href="#" onclick="s6()">News</a>
+            <a href="#" onclick="s7()">Company Product</a>
+            <a href="#" onclick="s8()">LPA</a>
+            <a href="#" onclick="s9()">Address</a>
+        </div>
+        <div class="home">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">Home Page</h1>
+            <p class="home-p">
+                Certainly! To create a description for your blog website's homepage, I'll need some information about
+                the focus and theme of your blog. Please provide details about the main topics you cover, any unique
+                features, and the overall message or purpose of your blog. This will help me tailor the description to
+                best represent your website.Of course! I'd be happy to help you craft a description for your blog
+                website. However, I'll need a bit more information about your blog. Could you please provide details
+                about the theme or topic of your blog, any specific messages or keywords you'd like to include, and any
+                unique features or benefits you'd like to highlight? This information will help me create a description
+                that accurately represents your blog.</p>
+
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+
+
+
+        <div class="about">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">About Page</h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">About Shanu Diman
+
+                Welcome to Shanu Diman, a space where ideas, creativity, and stories come to life. I'm Shanu Diman, the
+                creator behind this platform. I believe in the power of words to inspire, educate, and connect people
+                from all walks of life.
+
+                Our Mission
+
+                At Shanu Diman, our mission is simple yet profound - to share meaningful content that resonates with our
+                readers. Whether it's through thought-provoking articles, personal narratives, or insightful guides, we
+                aim to create a space where you can find value, inspiration, and a sense of belonging.
+
+                What We Offer
+
+                Engaging Content: Our blog covers a diverse range of topics, from personal development and lifestyle to
+
+                your life.
+
+
+
+                Shanu Diman</p>
+
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+        <div class="serives">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">Services Page</h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">
+
+
+                Services Offered by Shau Dhiman
+                Welcome to Shau Dhiman's services page. I offer a range of services designed to meet your needs. From
+                content creation to web development, I'm here to help you succeed online.
+
+                Content Creation
+                Description:
+                Engage your audience with high-quality, tailored content. Whether you need blog posts, articles, or
+                social media content, I'm here to craft compelling narratives that resonate with your target audience.
+
+                Benefits:
+
+                Captivating storytelling that drives engagement.
+                SEO-optimized content to boost your online visibility.
+                Tailored content strategy to align with your brand's goals.
+                Web Development
+                Description:
+
+
+
+            </p>
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+        <div class="preferences">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">Preferences Page
+            </h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">
+
+                Personal Statement
+
+                I am Shanu Dhiman, a passionate and driven individual committed to continuous learning and personal
+                growth. Throughout my journey, I have cultivated a deep appreciation for creativity, problem-solving,
+                and the power of collaboration.
+
+                With a background in [mention your field or relevant experience], I have honed my skills in [mention
+                specific skills or expertise]. I thrive in dynamic environments, leveraging challenges as opportunities
+                for innovation. My ability to adapt quickly and remain resilient in the face of adversity has been a
+                cornerstone of my success.
+
+
+
+
+
+            </p>
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+        <div class="More-Blog">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">More Blog
+            </h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">
+
+                More Blog
+
+                Explore a diverse range of thought-provoking articles and captivating narratives in our "More Blog"
+                section. From insightful industry analyses to personal reflections on life's journey, we offer a curated
+                selection of content that aims to inspire, inform, and entertain.
+
+                Dive into a world of ideas and perspectives, where each article is crafted with care to provide you with
+                valuable insights and engaging storytelling. Whether you're seeking practical advice, looking for fresh
+                perspectives, or simply in search of a good read, our "More Blog" has something for everyone.
+
+                Stay updated with the latest trends, discover expert opinions, and embark on a journey of discovery with
+                our carefully curated selection of articles. With topics spanning [mention some key topics or
+                categories], we're dedicated to bringing you content that resonates and
+
+
+
+
+
+            </p>
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+        <div class="news">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">News
+            </h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">
+
+                News
+
+                Stay informed with the latest updates and breaking news from around the world in our dedicated "News"
+                section. We bring you timely and reliable information on a wide range of topics, including current
+                events, global affairs, technology, lifestyle, and more.
+
+                Our team of experienced journalists and contributors work diligently to deliver accurate and
+                comprehensive news coverage. Whether it's political developments, technological breakthroughs, cultural
+                trends, or human interest stories, we strive to provide you with the most relevant and engaging news
+                articles.
+
+                With a commitment to objectivity and integrity, we aim to empower our readers with the knowledge they
+                need to make informed decisions. Explore in-depth analyses, feature stories, and exclusive interviews
+                that go beyond the headlines, offering you a deeper understanding of the world around us.
+
+
+
+
+
+
+
+            </p>
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+        <div class="Company-Product">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">Company Products
+            </h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">
+
+                Product Name: What is the name of your product?
+                Product Category: What type of product is it (e.g., electronics, clothing, food, software, etc.)?
+                Key Features: What are the main features and functionalities of the product?
+                Target Audience: Who is the intended audience or customer for this product?
+                Unique Selling Points (USPs): What sets this product apart from similar products in the market?
+                Benefits: What benefits will the customer gain from using this product?
+                Specifications (if applicable): Any technical details or specific attributes that should be mentioned?
+
+
+            </p>
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+        <div class="lpa">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">LPA
+            </h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">
+
+                Limited Power of Attorney (LPA): Empowering Your Legal Affairs
+
+                A Limited Power of Attorney (LPA) is a legal document that grants a designated individual, known as the
+                "agent" or "attorney-in-fact," the authority to make specific decisions and take actions on behalf of
+                the person creating the LPA, known as the "principal." Unlike a General Power of Attorney, which grants
+                broad authority over all legal and financial matters, an LPA is tailored to cover only specific tasks or
+                transactions.
+
+                Key Components of an LPA:
+
+
+
+                Revocation: The principal has the right to revoke or modify the LPA as long as they are mentally
+                competent. This can be done in writing.
+
+            </p>
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+
+        <div class="address">
+            <h1 style="font-size: 45px;padding-top: 30px; font-family: Arial, Helvetica, sans-serif;">Address
+            </h1>
+            <p style="margin-left: 30px; margin-left: 30px; font-size: 20px; font-family: sans-serif;">
+
+                Name= Vineet Kumar
+                Email=shnaudhiman7456@gmail.com
+                Uttar Perdesh Saharanpur
+
+            </p>
+            <img src="social media.PNG" alt="Erroe"
+                style="width: 213px; margin-left: 42%; padding-top: -19px; cursor: pointer;">
+        </div>
+        <h1>Latest Blog</h1>
+
+        <div class="container">
+            <img class="meta-img" src="mata.PNG" alt="Error">
+            <p>Meta's vision for the metaverse represents a bold step into the future of digital interaction and
+                connectivity. While there are immense possibilities, there are also challenges, including privacy
+                concerns and ensuring accessibility for all. As Meta continues to develop and shape another.</p>
+            <input class="btn-read" id="read-btn" type="button" value="Read More">
+        </div>
+        <div class="container-amazon">
+            <img class="amazon-pic" src="noq.PNG" alt="Error">
+            <p>Amazon's journey from an online bookstore to a global e-commerce and technology behemoth is a testament
+                to its founder's vision and the company's adaptability. Its impact on commerce, technology, and consumer
+                behavior is profound and continues to shape the future of business and innovation. </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container3">
+            <img class="insta-pic" src="insta.PNG" alt="Error">
+            <p>"Embracing the beauty of everyday moments ✨🌿 Life's true treasures are often found in the simplest
+                things. Take a moment to appreciate the warmth of the sun on your skin, the sound of laughter, and the
+                scent of freshly bloomed flowers. Let's make every day</p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container-facebook">
+            <img class="meta-img" src="facebook.PNG" alt="Error">
+            <p>Meta's vision for the metaverse represents a bold step into the future of digital interaction and
+                connectivity. While there are immense possibilities, there are also challenges, including privacy
+                concerns and ensuring accessibility for all. As Meta continues to develop and shape another.</p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="wtahs-pic" src="wathsapp.PNG" alt="Error">
+            <p>WhatsApp has revolutionized the way we communicate, connecting people across the globe and providing a
+                secure platform for sharing thoughts, ideas, and experiences. While it has faced challenges, its impact
+                on modern communication cannot be overstated. As WhatsApp continues </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="google-img" src="google.PNG" alt="Error">
+            <p>Google, founded in 1998, has revolutionized the way we access information and connect with the world.
+                This tech giant's impact on our daily lives is immeasurable. From its powerful search engine to its
+                suite of productivity tools, Google has become an integral part of modern society. Whethe</p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="hand-img" src="hand.PNG" alt="Error">
+            <p>Nokia, a Finnish multinational corporation, stands as a stalwart in the realm of telecommunications and
+                technology. Established in 1865, this company has a rich history of adapting and innovating. From its
+                roots in paper manufacturing to its evolution into a global telecommunications giant, </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="boot-img" src="bootstrap-removebg-preview.png" alt="Error">
+            <p>Bootstrap is a widely used open-source front-end framework that provides a comprehensive set of tools and
+                pre-designed elements for building responsive and visually appealing websites and web applications.
+                Developed by Twitter, it was initially released in 2011 and has since become</p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="redmi-img" src="redmi.PNG" alt="Error">
+            <p>Redmi, a subsidiary of the Chinese electronics giant Xiaomi, has emerged as a prominent player in the
+                global smartphone market. Known for delivering high-quality devices at competitive prices, Redmi has
+                garnered a dedicated following of tech enthusiasts and budget-conscious </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="redmi-img" src="jbl image.PNG" alt="Error">
+            <p>JBL, short for James Bullough Lansing, is a renowned American audio company with a storied history in the
+                world of audio equipment and technology. Established in 1946, the company was named after its founder,
+                James Lansing, who was a pioneering figure in the field of audio engineering. </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="oppo-img" src="oppo.PNG" alt="Error">
+            <p>Oppo is a prominent Chinese consumer electronics and mobile communications company that has rapidly
+                gained recognition and popularity in the global smartphone market. Founded in 2001, Oppo has made
+                significant strides in innovation and design, establishing itself as a key player in the competitive
+                tech industry. </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="vivo-img" src="vivo img.PNG" alt="Error">
+            <p>Vivo is a prominent Chinese technology company specializing in consumer electronics, primarily known for
+                its innovative smartphones. Established in 2009, Vivo has quickly risen to prominence in the global
+                smartphone market, becoming one of the leading players in the industry. </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="dell-img" src="dell img.PNG" alt="Error">
+            <p>Dell Inc. is a well-established American multinational technology company that has played a pivotal role
+                in the evolution of the personal computing industry. Founded by Michael Dell in 1984, the company
+                emerged as a pioneer in the direct-to-consumer model, allowing customers to customize and order their
+                PCs directly from </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="microsoft" src="microsoft.PNG" alt="Error">
+            <p>Microsoft has been at the forefront of technological advancements, investing heavily in areas like cloud
+                computing, artificial intelligence, and mixed reality. The Azure cloud platform has become a leading
+                choice for businesses looking to leverage cloud services, while products like Microsoft Teams and
+                Microsoft 365 have transformed the </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <div class="container">
+            <img class="messenger" src="messenger.PNG" alt="Error">
+            <p>Messenger's influence extends beyond personal communication. It has become an invaluable tool for
+                businesses and organizations, enabling them to reach customers through features like Messenger for
+                Business and chatbots. This has transformed customer service and marketing strategies, allowing for more
+                direct and interactive engagement. </p>
+            <input class="btn-read" onclick="sub()" type="button" value="Read More">
+        </div>
+        <img class="foot-img" src="back-removebg-preview.png" alt="Opps">
+        <br>
+        <input type="button" onclick="join()" value="Join Our Telegram" class="telegram-btn">
+        <br>
+        <hr>
+        <div class="form-div">
+            <br>
+            <h5>Login Here</h5>
+            <input class="name" id="a1" type="text" placeholder="Enter your Name:">
+
+            <input type="text" id="a2" placeholder="Enter your Email:">
+            <input type="text" id="a3" placeholder="Enter your Father Name:">
+            <input type="number" id="a4" placeholder="Enter your Phone Number:">
+
+            <input type="password" id="a5" placeholder="Enter your password:">
+            <select id="a6">
+                <option>Software Developer/Engineer</option>
+                <option>Web Developer</option>
+                <option>Mobile App Developer (iOS/Android)</option>
+                <option>Full-Stack Developer</option>
+                <option>Front-End Developer</option>
+                <option>Back-End Developer</option>
+                <option>DevOps Engineer</option>
+                <option>Database Administrator (DBA)</option>
+                <option>Data Analyst</option>
+                <option>Data Scientist</option>
+                <option>Business Intelligence (BI) Analyst</option>
+                <option>Machine Learning Engineer</option>
+                <option>Artificial Intelligence (AI) Specialist</option>
+                <option>Cybersecurity Analyst</option>
+                <option>Network Engineer</option>
+                <option>Systems Administrator</option>
+                <option>Cloud Engineer/Architect</option>
+                <option>IT Project Manager</option>
+                <option>Quality Assurance (QA) Tester</option>
+                <option>UX/UI Designer</option>
+                <option>Product Manager (IT)</option>
+                <option>IT Support Specialist</option>
+                <option>IT Consultant</option>
+                <option>Enterprise Architect</option>
+                <option>Systems Analyst</option>
+                <option>Technical Writer (IT)</option>
+                <option>IT Trainer/Instructor</option>
+                <option>IT Sales Representative</option>
+                <option>Health IT Specialist</option>
+                <option>Blockchain Developer</option>
+            </select>
+            <br>
+            <input class="last-btn" onclick="submi()" type="button" value="Submit">
+            <p style="font-family: sans-serif;" id="result">
+
+            </p>
+
+
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <p>This is our Blog Website Project i am a Froentend develeper</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Latest Posts</h3>
+                    <ul>
+                        <li><a href="#">Post Title 1</a></li>
+                        <li><a href="#">Post Title 2</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>6933865335 vintikuamr5236@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Your Blog</p>
+            </div>
+        </footer>
+
+
+    </body>
+    <script>
+        function s1() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".services")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+            j.style.display = "none";
+
+
+        }
+        function s2() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "none";
+            b.style.display = "block";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+            j.style.display = "none";
+        }
+        function s3() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+            j.style.display = "none";
+        }
+        function s4() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "block";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+            j.style.display = "none";
+        }
+        function s5() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "block";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+            j.style.display = "none";
+        }
+        function s6() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "block";
+            g.style.display = "none";
+            h.style.display = "none";
+            j.style.display = "none";
+        }
+        function s7() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "block";
+            h.style.display = "none";
+            j.style.display = "none";
+        }
+        function s8() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "block";
+            j.style.display = "none";
+        }
+        function s9() {
+            let a = document.querySelector(".home")
+            let b = document.querySelector(".about")
+            let c = document.querySelector(".serives")
+            let d = document.querySelector(".preferences")
+            let e = document.querySelector(".More-Blog")
+            let f = document.querySelector(".news")
+            let g = document.querySelector(".Company-Product")
+            let h = document.querySelector(".lpa")
+            let j = document.querySelector(".address")
+
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+            j.style.display = "block";
+        }
+
+
+        function tpe() {
+            let a = document.getElementById("search");
+            let b = a.value
+            alert("You Searched:" + b)
+        }
+        let res = document.getElementById("read-btn").addEventListener("click", dis)
+        function dis() {
+            alert("You Clicked on Read More Button")
+        }
+        function sub() {
+            alert("You Click on Read more Button")
+        }
+        let join = () => {
+            alert("Now you Joined On Our Telegram Channel")
+        }
+
+
+
+
+
+
+
+
+        let ary = []
+        let ary2 = []
+        let ary3 = []
+        let ary4 = []
+        let ary5 = []
+        let ary6 = []
+        function submi() {
+            let name = document.getElementById("a1").value
+            ary.push(name)
+            console.log(ary)
+            let email = document.getElementById("a2").value
+            ary2.push(email)
+            console.log(ary2)
+            let fathername = document.getElementById("a3").value
+            ary3.push(fathername)
+            console.log(ary3)
+            let mobile = document.getElementById("a4").value
+            ary4.push(mobile)
+            console.log(ary4)
+            let password = document.getElementById("a5").value
+            ary5.push(password)
+            console.log(ary5)
+            let job = document.getElementById("a6").value
+            ary6.push(job)
+            console.log(ary6)
+
+
+            document.getElementById("result").innerHTML = `Name: ${name}<br>Email: ${email}<br>Father Name: ${fathername}<br>Mobile: ${mobile}<br>Password: ${password}<br>Job Type: ${job}`
+        }
+
+
+    </script>
+
+    </html>
